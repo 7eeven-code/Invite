@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convite Especial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fundo animado -->
+    <div class="background-animation"></div>
+    
+    <!-- Container principal -->
+    <div class="container">
+        <div class="card">
+            <!-- Cabeçalho -->
+            <div class="header">
+                <h1 class="title">Oi! 💕</h1>
+                <p class="subtitle">Tenho uma pergunta para você...</p>
+            </div>
+
+            <!-- Pergunta principal -->
+            <div class="question-section">
+                <div class="heart-decoration">💕</div>
+                <h2 class="question">Você quer sair comigo?</h2>
+                <div class="heart-decoration">💕</div>
+            </div>
+
+            <!-- Botões -->
+            <div class="buttons-container">
+                <button class="btn btn-yes" id="yesBtn">
+                    <span class="btn-text">Sim! ❤️</span>
+                </button>
+                <button class="btn btn-no" id="noBtn">
+                    <span class="btn-text">Não</span>
+                </button>
+            </div>
+
+            <!-- Mensagem oculta -->
+            <div class="final-message" id="finalMessage" style="display: none;">
+                <h2>Que felicidade! 🎉</h2>
+                <p>Você acabou de fazer o meu dia!</p>
+                <p class="love-text">Te amo! 💕</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Container para corações flutuantes -->
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
