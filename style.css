@@ -148,7 +148,6 @@ body {
     }
 }
 
-/* Corações flutuantes */
 .heart {
     position: fixed;
     pointer-events: none;
