@@ -4,12 +4,10 @@ const celebration = document.getElementById('celebration');
 const buttons = document.querySelector('.buttons');
 const heartsContainer = document.getElementById('hearts');
 
-// Botão SIM
 yesBtn.addEventListener('click', () => {
     buttons.style.display = 'none';
     celebration.style.display = 'block';
     
-    // Criar corações
     for (let i = 0; i < 30; i++) {
         setTimeout(() => {
             const heart = document.createElement('div');
@@ -24,7 +22,6 @@ yesBtn.addEventListener('click', () => {
     }
 });
 
-// Botão NÃO - foge do mouse
 noBtn.addEventListener('mouseenter', () => {
     const randomX = Math.random() * (window.innerWidth - 100);
     const randomY = Math.random() * (window.innerHeight - 50);
@@ -35,7 +32,6 @@ noBtn.addEventListener('mouseenter', () => {
     noBtn.style.zIndex = '100';
 });
 
-// Mobile - botão nao foge ao tocar
 noBtn.addEventListener('touchstart', (e) => {
     e.preventDefault();
     
